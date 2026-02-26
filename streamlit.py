@@ -9,9 +9,9 @@ st.text("Welecome! Browse our eclusive products belw:")
 st.divider()
 
 products = [
-{"name" : "smart watch" , "price": 150, "image":"C:/Users/Pc SToRe/Downloads/gs-ultra-8_1.jpg"},
-{"name" : "wireless headphone" , "price": 80 , "image":"C:/Users/Pc SToRe/Downloads/images (2).jpg"} , 
-{"name" : "leather backpack" , "price": 55 , "image":"C:/Users/Pc SToRe/Downloads/187_dbd6a372-a23c-4c1b-bc37-bcd7fca2f057.webp"} 
+{"name" : "smart watch" , "price": 150, "image":"gs-ultra-8_1.jpg"},
+{"name" : "wireless headphone" , "price": 80 , "image":"images (2).jpg"} , 
+{"name" : "leather backpack" , "price": 55 , "image":"187_dbd6a372-a23c-4c1b-bc37-bcd7fca2f057.webp"} 
 ]
 
 if "cart" not in st.session_state :
@@ -52,4 +52,5 @@ if len(st.session_state.cart) > 0:
         st.info(f"name:{i['name']} , price {i['price']} ")
 
     st.success(f"total : {total} $")
+
         
